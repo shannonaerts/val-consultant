@@ -1,0 +1,315 @@
+{
+  "clients": [
+    {
+      "id": "acme-corp",
+      "name": "Acme Corporation",
+      "industry": "Technology",
+      "website": "https://acme.com",
+      "status": "active",
+      "created_at": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "global-tech",
+      "name": "Global Tech Solutions",
+      "industry": "Software Development",
+      "website": "https://globaltech.com",
+      "status": "active",
+      "created_at": "2024-01-05T00:00:00Z"
+    },
+    {
+      "id": "innovate-labs",
+      "name": "Innovate Labs",
+      "industry": "AI/ML Research",
+      "website": "https://innovatelabs.com",
+      "status": "active",
+      "created_at": "2024-01-10T00:00:00Z"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "meeting-1",
+      "client_id": "acme-corp",
+      "title": "Initial Discovery Call",
+      "date": "2024-01-15",
+      "duration": "45 min",
+      "participants": ["John Smith (CEO)", "Sarah Johnson (CTO)"],
+      "status": "completed",
+      "transcript": {
+        "segments": [
+          {
+            "speaker": "client",
+            "text": "Thanks for taking the time to meet with us today. We're really excited about the possibility of working together.",
+            "timestamp": "00:00:15",
+            "confidence": 0.95
+          },
+          {
+            "speaker": "val",
+            "text": "The pleasure is all ours. We've been looking forward to this discussion. Can you start by telling us a bit about what prompted you to reach out?",
+            "timestamp": "00:00:25",
+            "confidence": 0.97
+          },
+          {
+            "speaker": "client",
+            "text": "Absolutely. We've been growing rapidly over the past year, and our current systems are really starting to show the strain. We're having issues with data silos, inefficient communication between departments, and a lack of real-time insights into our operations.",
+            "timestamp": "00:00:45",
+            "confidence": 0.94
+          }
+        ],
+        "summary": "Client expressed interest in operational efficiency solutions. Main challenges identified: data silos, inter-departmental communication issues, and lack of real-time insights.",
+        "duration": "45 minutes",
+        "word_count": 285,
+        "speaker_count": 2
+      }
+    },
+    {
+      "id": "meeting-2",
+      "client_id": "acme-corp",
+      "title": "Technical Requirements Review",
+      "date": "2024-01-22",
+      "duration": "60 min",
+      "participants": ["Sarah Johnson (CTO)", "Mike Chen (Lead Developer)"],
+      "status": "completed",
+      "transcript": {
+        "segments": [
+          {
+            "speaker": "client",
+            "text": "Let's dive into the technical requirements. Our current stack is primarily Python and React, with PostgreSQL as our main database.",
+            "timestamp": "00:00:30",
+            "confidence": 0.96
+          },
+          {
+            "speaker": "val",
+            "text": "Great, that aligns well with our expertise. Can you walk me through your current architecture and where you see the main pain points?",
+            "timestamp": "00:00:45",
+            "confidence": 0.94
+          },
+          {
+            "speaker": "client",
+            "text": "We have a monolithic application that's becoming increasingly difficult to maintain. Deployment times are getting longer, and different teams are stepping on each other's toes during development.",
+            "timestamp": "00:01:10",
+            "confidence": 0.95
+          }
+        ],
+        "summary": "Technical discussion focused on modernizing monolithic application to microservices architecture. Current stack: Python, React, PostgreSQL.",
+        "duration": "60 minutes",
+        "word_count": 198,
+        "speaker_count": 2
+      }
+    },
+    {
+      "id": "meeting-3",
+      "client_id": "acme-corp",
+      "title": "Proposal Presentation",
+      "date": "2024-01-29",
+      "duration": "90 min",
+      "participants": ["John Smith (CEO)", "Sarah Johnson (CTO)", "Lisa Wang (Product Manager)"],
+      "status": "completed",
+      "transcript": {
+        "segments": [
+          {
+            "speaker": "val",
+            "text": "Good morning everyone, and thank you for joining us today. I'm excited to walk you through our proposed solution for your operational challenges.",
+            "timestamp": "00:00:20",
+            "confidence": 0.95
+          },
+          {
+            "speaker": "client",
+            "text": "We're looking forward to seeing what you've put together. The initial proposals looked promising.",
+            "timestamp": "00:00:35",
+            "confidence": 0.93
+          },
+          {
+            "speaker": "val",
+            "text": "Great. Let me start by sharing my screen and walking you through the three main components of our solution.",
+            "timestamp": "00:01:00",
+            "confidence": 0.96
+          }
+        ],
+        "summary": "Demo presentation of proposed solution covering unified data platform, real-time analytics, and workflow automation.",
+        "duration": "90 minutes",
+        "word_count": 342,
+        "speaker_count": 3
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "client_id": "acme-corp",
+      "title": "Prepare project proposal draft",
+      "description": "Create comprehensive proposal for Phase 1 implementation including timeline, budget, and deliverables",
+      "assignee": "John Smith",
+      "due_date": "2024-01-20",
+      "priority": "high",
+      "status": "completed",
+      "reminder": true,
+      "created_at": "2024-01-16T11:00:00Z",
+      "completed_at": "2024-01-19T16:30:00Z"
+    },
+    {
+      "id": "task-2",
+      "client_id": "acme-corp",
+      "title": "Review technical requirements document",
+      "description": "Go through technical specifications and identify potential challenges and dependencies",
+      "assignee": "Sarah Johnson",
+      "due_date": "2024-01-18",
+      "priority": "medium",
+      "status": "completed",
+      "reminder": false,
+      "created_at": "2024-01-17T09:00:00Z",
+      "completed_at": "2024-01-17T17:45:00Z"
+    },
+    {
+      "id": "task-3",
+      "client_id": "acme-corp",
+      "title": "Schedule follow-up meeting with stakeholders",
+      "description": "Arrange demo session with key stakeholders to present initial findings",
+      "assignee": "Mike Chen",
+      "due_date": "2024-02-05",
+      "priority": "low",
+      "status": "pending",
+      "reminder": true,
+      "created_at": "2024-01-20T14:00:00Z"
+    },
+    {
+      "id": "task-4",
+      "client_id": "acme-corp",
+      "title": "Finalize budget estimates",
+      "description": "Prepare detailed cost breakdown for proposed solution",
+      "assignee": "John Smith",
+      "due_date": "2024-02-01",
+      "priority": "high",
+      "status": "pending",
+      "reminder": true,
+      "created_at": "2024-01-25T10:30:00Z"
+    },
+    {
+      "id": "task-5",
+      "client_id": "global-tech",
+      "title": "Research cloud migration strategies",
+      "description": "Investigate best practices for migrating from on-premise to cloud infrastructure",
+      "assignee": "Emily Zhang",
+      "due_date": "2024-02-10",
+      "priority": "medium",
+      "status": "in_progress",
+      "reminder": false,
+      "created_at": "2024-01-22T13:15:00Z"
+    }
+  ],
+  "research_data": {
+    "acme-corp": {
+      "overview": "Acme Corporation is a leading technology company specializing in innovative software solutions for enterprise clients. Founded in 2010, the company has grown to become a trusted partner for Fortune 500 companies seeking digital transformation.",
+      "industry": "Technology",
+      "size": "1000-5000 employees",
+      "founded": "2010",
+      "location": "San Francisco, CA",
+      "website": "https://acme.com",
+      "funding": "$50M Series C (2023)",
+      "revenue": "$120M annual recurring revenue",
+      "recent_news": "Recently launched AI-powered customer service platform, expanded to European market",
+      "executives": "John Smith (CEO), Sarah Johnson (CTO), Michael Chen (CFO)",
+      "products": "Enterprise Software, AI Solutions, Cloud Platform, Analytics Tools",
+      "competitors": "TechCorp, InnoSoft, DataFlow",
+      "target_market": "Fortune 500, Large enterprises, Government agencies",
+      "scraped_sources": ["website", "linkedin", "news", "financial"],
+      "scraping_timestamp": "2024-01-15T10:30:00Z"
+    },
+    "global-tech": {
+      "overview": "Global Tech Solutions is a premier software development company focused on creating cutting-edge solutions for modern businesses. With expertise in cloud computing and AI, they help organizations accelerate their digital journey.",
+      "industry": "Software Development",
+      "size": "500-1000 employees",
+      "founded": "2015",
+      "location": "New York, NY",
+      "website": "https://globaltech.com",
+      "funding": "$25M Series B (2022)",
+      "revenue": "$45M annual revenue",
+      "recent_news": "Opened new development center in Bangalore, won enterprise cloud contract",
+      "executives": "David Lee (CEO), Emily Zhang (CTO), Robert Kumar (COO)",
+      "products": "Cloud Solutions, Mobile Apps, AI Integration, DevOps Tools",
+      "competitors": "CloudSoft, DevFlow, AppLogic",
+      "target_market": "Mid-size enterprises, Startups, Educational institutions",
+      "scraped_sources": ["website", "linkedin"],
+      "scraping_timestamp": "2024-01-12T14:20:00Z"
+    },
+    "innovate-labs": {
+      "overview": "Innovate Labs is at the forefront of artificial intelligence and machine learning research. The company specializes in developing proprietary algorithms that help businesses leverage data for competitive advantage.",
+      "industry": "AI/ML Research",
+      "size": "50-200 employees",
+      "founded": "2018",
+      "location": "Boston, MA",
+      "website": "https://innovatelabs.com",
+      "funding": "$10M Seed + Series A (2021)",
+      "revenue": "$8M research grants + contracts",
+      "recent_news": "Published breakthrough paper on natural language understanding, partnered with major university",
+      "executives": "Dr. Jennifer Wu (CEO), Dr. Alex Rodriguez (Head of Research), Lisa Park (VP Engineering)",
+      "products": "NLP Models, Predictive Analytics, Computer Vision, Data Insights Platform",
+      "competitors": "DeepMind, OpenAI, Anthropic",
+      "target_market": "Research institutions, Tech companies, Healthcare organizations",
+      "scraped_sources": ["website", "news"],
+      "scraping_timestamp": "2024-01-18T09:45:00Z"
+    }
+  },
+  "dashboard_data": {
+    "acme-corp": {
+      "kpis": {
+        "totalMeetings": 3,
+        "completedTasks": 2,
+        "pendingTasks": 2,
+        "totalInteractions": 15,
+        "interactionRate": 85,
+        "clientSatisfaction": 4.7
+      },
+      "meeting_trend": [
+        { "date": "2024-01-15", "meetings": 1, "interactions": 5 },
+        { "date": "2024-01-22", "meetings": 1, "interactions": 6 },
+        { "date": "2024-01-29", "meetings": 1, "interactions": 4 }
+      ],
+      "task_completion": [
+        { "name": "Completed", "value": 2, "color": "#10b981" },
+        { "name": "In Progress", "value": 0, "color": "#f59e0b" },
+        { "name": "Pending", "value": 2, "color": "#6b7280" },
+        { "name": "Overdue", "value": 0, "color": "#ef4444" }
+      ],
+      "top_topics": [
+        { "topic": "Technical Requirements", "count": 8 },
+        { "topic": "Project Timeline", "count": 5 },
+        { "topic": "Budget Discussion", "count": 4 },
+        { "topic": "Team Structure", "count": 3 },
+        { "topic": "Implementation Strategy", "count": 2 }
+      ]
+    }
+  },
+  "chat_samples": [
+    {
+      "query": "What did we discuss in our last meeting with Acme?",
+      "response": "In your last meeting with Acme Corporation on January 29th, you presented a comprehensive proposal covering three main components: unified data platform, real-time analytics dashboard, and automated workflow engine. The client, including CEO John Smith and CTO Sarah Johnson, expressed interest in seeing the implementation timeline. You mentioned that initial benefits could be seen within 4-6 weeks, with full implementation taking 3-4 months using a phased approach.",
+      "sources": [
+        { "type": "meeting", "name": "Proposal Presentation" },
+        { "type": "research", "name": "Company Overview" }
+      ]
+    },
+    {
+      "query": "What are the main pain points for this client?",
+      "response": "Based on your discovery call and technical review, Acme Corporation's main pain points include: 1) Data silos preventing efficient information flow between departments, 2) Poor inter-departmental communication leading to issues like sales promising features engineering doesn't know about, 3) Lack of real-time insights for leadership decision-making, 4) A monolithic application that's becoming difficult to maintain with increasing deployment times and team coordination challenges.",
+      "sources": [
+        { "type": "meeting", "name": "Initial Discovery Call" },
+        { "type": "meeting", "name": "Technical Requirements Review" }
+      ]
+    },
+    {
+      "query": "What tasks are pending for this client?",
+      "response": "There are currently 2 pending tasks for Acme Corporation: 1) 'Schedule follow-up meeting with stakeholders' assigned to Mike Chen, due February 5th (low priority), and 2) 'Finalize budget estimates' assigned to John Smith, due February 1st (high priority). Both tasks have reminders set. You've also completed 2 tasks: the project proposal draft and technical requirements review.",
+      "sources": [
+        { "type": "task", "name": "Task Management" }
+      ]
+    },
+    {
+      "query": "Summarize the client's business model",
+      "response": "Acme Corporation operates as a B2B technology company providing enterprise software solutions. With $120M in annual recurring revenue and 1000-5000 employees, they target Fortune 500 companies, large enterprises, and government agencies. Their business model focuses on AI-powered platforms, cloud solutions, and analytics tools. They recently raised $50M in Series C funding and are expanding to European markets, indicating a growth-stage company with strong market traction.",
+      "sources": [
+        { "type": "research", "name": "Company Overview" },
+        { "type": "research", "name": "Financial Data" }
+      ]
+    }
+  ]
+}

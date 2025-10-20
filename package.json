@@ -1,0 +1,48 @@
+{
+  "name": "val-consultant",
+  "version": "1.0.0",
+  "description": "VAL - Virtual AI Consultant MVP by GemSquash",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend/node-services && npm start",
+    "start:websocket": "cd backend/node-services && npm run websocket",
+    "start:scraper": "cd backend/python-services/scraper && python -m uvicorn main:app --host 0.0.0.0 --port 8001 --reload",
+    "start:transcriber": "cd backend/python-services/transcriber && python main.py",
+    "start:vector-store": "cd backend/python-services/vector-store && python main.py",
+    "start:task-engine": "cd backend/python-services/task-engine && python main.py",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:websocket\" \"npm run start:frontend\"",
+    "dev:with-scraper": "concurrently \"npm run start:scraper\" \"npm run start:backend\" \"npm run start:websocket\" \"npm run start:frontend\"",
+    "dev:full": "concurrently \"npm run start:scraper\" \"npm run start:transcriber\" \"npm run start:vector-store\" \"npm run start:task-engine\" \"npm run start:backend\" \"npm run start:websocket\" \"npm run start:frontend\"",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend/node-services && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "consultant",
+    "virtual",
+    "assistant",
+    "rag",
+    "fastapi",
+    "react",
+    "nodejs",
+    "python"
+  ],
+  "author": "GemSquash",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "python": ">=3.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gemsquash/val-consultant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gemsquash/val-consultant/issues"
+  },
+  "homepage": "https://github.com/gemsquash/val-consultant#readme"
+}
